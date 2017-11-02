@@ -1,0 +1,20 @@
+<div class="content-layout-container">
+    <h1>Access Tokens</h1>
+
+    <div class="content-wrapper">
+        <div class="card stretch card-pole-pad card-side-pad">
+
+            <div class="content-with-footer">
+                <div class="alert alert-static"
+                    ng-if="AccessTokens.gridOption.length !== 0 && AccessTokens.gridOption.data[0]._emptyRow"
+                    ng-bind-html="AccessTokens.noTokensMessage">
+                </div>
+                <jf-grid ng-if="AccessTokens.gridOption"
+                        grid-options="AccessTokens.gridOption"
+                        filter-field="subject"
+                        object-name="token"
+                        auto-focus="true"></jf-grid>
+            </div>
+        </div>
+    </div>
+</div>
