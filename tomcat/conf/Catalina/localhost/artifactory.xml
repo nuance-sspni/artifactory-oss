@@ -1,3 +1,0 @@
-<Context path="/artifactory" docBase="${artifactory.home}/webapps/artifactory.war">
-
-</Context>
